@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="http://localhost/realestate/assets/css/style.min.css?id=1770398715">
+</head>
+
+<body>
+
+<style>
+.mb-container-prop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: none;
+}
+.mb-body-prop{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background: #111;
+}
+
+.main-container .image-container {
+  height: 100%;
+  width: 100%;
+}
+.image-container > canvas{
+  width: 100% !important;
+  height: 100% !important;
+}
+.main-container h1 {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 10px;
+
+  z-index: 100;
+  text-shadow: 2px 16px 16px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+.mb-header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border: none;
+}
+.mb-close-prop{
+  background-color: var(--bs-white);
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+
+
+
+<!-- JS FILES -->
+<script src="jquery.min.js"></script>
+<script src="three.min.js"></script>
+<script src="panolens.min.js"></script>
+
+<script>
+const panorama = new PANOLENS.ImagePanorama('186181811.jpeg');
+const viewer = new PANOLENS.Viewer({
+    container: document.body,
+    autoRotate: true,
+    autoRotateSpeed: 0.3
+});
+viewer.add(panorama);
+</script>
+
+</body>
+</html>

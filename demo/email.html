@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Listing Improvement – 360° View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin:0; padding:0; background:#f4f4f4; font-family: Arial, Helvetica, sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4; padding:20px;">
+    <tr>
+        <td align="center">
+            <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff; padding:30px; border-radius:6px;">
+
+                <tr>
+                    <td style="color:#333333; font-size:15px; line-height:1.6;">
+                        <p>Hello,</p>
+
+                        <p>
+                            I recently came across your <strong>recent post on LinkedIn</strong> showcasing your property listing,
+                            and I wanted to share a quick observation.
+                        </p>
+
+                        <h3 style="margin-top:25px; color:#111111;">The Problem</h3>
+
+                        <p>
+                            Right now, the listing uses <strong>static images only</strong>.
+                            While the property looks good, simple images don’t fully convey the
+                            <strong>space, layout, and real feel</strong> of the property.
+                            This often results in:
+                        </p>
+
+                        <ul style="padding-left:20px;">
+                            <li>Lower engagement</li>
+                            <li>More back-and-forth questions</li>
+                            <li>Less confident buyer interest</li>
+                        </ul>
+
+                        <h3 style="margin-top:25px; color:#111111;">The Solution</h3>
+
+                        <p>
+                            A simple and effective improvement would be to add a
+                            <strong>360° virtual view</strong> of the property.
+                        </p>
+
+                        <p>This allows users to:</p>
+
+                        <ul style="padding-left:20px;">
+                            <li>Explore the property interactively</li>
+                            <li>Understand space and depth better</li>
+                            <li>Feel more confident before making inquiries</li>
+                        </ul>
+
+                        <h3 style="margin-top:25px; color:#111111;">Demo</h3>
+                        <!------------->
+<div style="width: 500px; height: 500px;">
+
+
+
+    <link rel="stylesheet" href="http://localhost/realestate/assets/css/style.min.css?id=1770398715">
+
+
+<style>
+.mb-container-prop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: none;
+}
+.mb-body-prop{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background: #111;
+}
+
+.main-container .image-container {
+  height: 100%;
+  width: 100%;
+}
+.image-container > canvas{
+  width: 100% !important;
+  height: 100% !important;
+}
+.main-container h1 {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 10px;
+
+  z-index: 100;
+  text-shadow: 2px 16px 16px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+.mb-header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border: none;
+}
+.mb-close-prop{
+  background-color: var(--bs-white);
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+
+
+
+<!-- JS FILES -->
+<script src="jquery.min.js"></script>
+<script src="three.min.js"></script>
+<script src="panolens.min.js"></script>
+
+<script>
+const panorama = new PANOLENS.ImagePanorama('186181811.jpeg');
+const viewer = new PANOLENS.Viewer({
+    container: document.body,
+    autoRotate: true,
+    autoRotateSpeed: 0.3
+});
+viewer.add(panorama);
+</script>
+
+</div>
+                        <!------------->
+
+                        <p>
+                            I’ve created a quick demo to show how this can look and function in real-time.
+                            This can be easily integrated into your existing property listing
+                            without changing your current setup.
+                        </p>
+
+                        <p>
+                            If this sounds interesting, I’d be happy to walk you through it
+                            or customize it for your listings.
+                        </p>
+
+                        <p style="margin-top:30px;">
+                            Looking forward to your thoughts.
+                        </p>
+
+                        <p style="margin-top:25px;">
+                            Best regards,<br>
+                            <strong>Rishabh A. B.</strong>
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
